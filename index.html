@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Chloe Vanhoof">
+	<title>Form Activity Solution File</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+	<form>
+		<form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+		<label id="name"> Full Name <span class="required">*</span></label> </label>
+		<input type="text"  id="name"name="name">
+
+		<label id= "email"> Email<span class="required">*</span></label></label>
+		<input type="email" id="email" name="email">
+
+		<label id="phone">Phone<span class="required">*</span></label></label>
+		<input type="tel" id="phone" name="phone">
+
+		<fieldset>
+			<legend>Preferred Method of Contact<span class="required">*</span></label></legend>
+
+			<input type="radio"> 
+			<label id="phone" value="phone">Phone</label>
+			<input type="radio"> 
+			<label id="email" value="email">Email</label>
+		</fieldset>
+
+		<label id="state">State<span class="required">*</span></label></label>
+			<select name="state" id="state">
+				<option value="state">State</option>
+				<option value="football">Alabama</option>
+			<option value="football">Alaska</option>
+			<option value="football">Arizona</option>
+			<option value="football">Arkansas</option>
+			<option value="football">California</option>
+			<option value="football">Colorado</option>
+			<option value="football">Connecticut</option>
+			<option value="football">Delaware</option>
+			<option value="football">Florida</option>
+			<option value="football">Georgia</option>
+			<option value="football">Hawaii</option>
+			<option value="football">Idaho</option>
+			<option value="football">Illinois</option>
+			<option value="football">Indiana</option>
+			<option value="football">Iowa</option>
+			<option value="football">Kansas</option>
+			<option value="football">Kentucky</option>
+			<option value="football">Louisiana</option>
+			<option value="football">Maine</option>
+			<option value="football">Maryland</option>
+			<option value="football">Massachusetts</option>
+			<option value="football">Michigan</option>
+			<option value="football">Minnesota</option>
+			<option value="football">Michigan</option>
+			<option value="football">Mississippi</option>
+			<option value="football">Missouri</option>
+			<option value="football">Montana</option>
+			<option value="football">Nebraska</option>
+			<option value="football">Nevada</option>
+			<option value="football">New Hampshire</option>
+			<option value="football">New Jersey</option>
+			<option value="football">New Mexico</option>
+			<option value="football">New York</option>
+			<option value="football">North Carolina</option>
+			<option value="football">North Dakota</option>
+			<option value="football">Ohio</option>
+			<option value="football">Oklahoma</option>
+			<option value="football">Oregon</option>
+			<option value="football">Pennsylvania</option>
+			<option value="football">Rhode Island</option>
+			<option value="football">South Carolina</option>
+			<option value="football">South Dakota</option>
+			<option value="football">Tennessee</option>
+			<option value="football">Texas</option>
+			<option value="football">Utah</option>
+			<option value="football">Vermont</option>
+			<option value="football">Virginia</option>
+			<option value="football">Washington</option>
+			<option value="football">West Virginia</option>
+			<option value="football">Wisconsin</option>
+			<option value="football">Wyoming</option>
+			</select>
+
+			<label id="comment">Comments</label>
+			<textarea id="comment" name="comment" rows="2" cols="20"></textarea>
+
+			<input type="submit">
+
+	</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
